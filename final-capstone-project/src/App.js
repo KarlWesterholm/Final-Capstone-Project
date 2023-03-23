@@ -1,12 +1,12 @@
 import './App.css';
+import Nav from './Nav.js';
+import Header from './Header.js';
 
 function App() {
   return (
     <>
       <Nav/>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Header backgroundColor="#495E57"/>
     </>
   );
 }

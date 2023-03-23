@@ -2,7 +2,73 @@
   text-align: center;
 }
 
-.App-logo {
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 64pt;
+  font-family: 'Markazi Text';
+  font-weight: 500;
+  color: #F4CE14;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 40pt;
+  font-family: 'Markazi Text';
+  color: #EDEFEE;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16pt;
+  color: #EDEFEE;
+  max-width: 55ch;
+}
+
+nav {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#navlinks {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+button {
+  width: 200px;
+  height: 60px;
+  background-color: #F4CE14;
+  color: #333333;
+  font: bold 16pt 'Karla';
+  border-radius: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Karla';
+  font-weight: bold;
+}
+
+img {
+  border-radius: 16px;
+}
+
+header {
+  padding: 40px 10vw 0 10vw;
+  justify-content: center;
+  background-color: #495E57;
+  display: flex;
+  padding-left: 10vw;
+  max-height: 444px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +101,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
