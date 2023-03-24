@@ -20,10 +20,14 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font: 500 48pt 'Markazi Text';
+}
+
 p {
   line-height: 1.5;
   font-size: 16pt;
-  color: #EDEFEE;
+  color: #495E57;
   max-width: 55ch;
 }
 
@@ -64,8 +68,43 @@ header {
   justify-content: center;
   background-color: #495E57;
   display: flex;
-  padding-left: 10vw;
   max-height: 444px;
+}
+
+#specialHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10vw 0 10vw;
+  align-items: center;
+}
+
+#specials {
+  display: flex;
+  gap: 67px;
+  justify-content: center;
+}
+
+#card {
+  background-color: #EFEFEE;
+  border-radius: 16px;
+  width: 260px;
+  padding: 20px;
+}
+
+#testimonials {
+  margin-top: 40px;
+  background-color: #495E57;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: repeat(4,1fr);
+  padding: 25px;
+}
+
+#testimonials > h2 {
+  justify-content: center;
+  grid-row: 1;
+  grid-column-start: span(1,4);
 }
 
 /* .App-logo {
