@@ -24,6 +24,21 @@ h3 {
   font: 500 48pt 'Markazi Text';
 }
 
+h4 {
+  font: bold 20pt 'Markazi Text';
+  margin: auto auto 0 auto;
+}
+
+h5 {
+  text-align: center;
+  font: normal 16pt 'Karla';
+}
+
+h6 {
+  font: bold 12pt 'Karla';
+  margin: auto auto 5px auto;
+}
+
 p {
   line-height: 1.5;
   font-size: 16pt;
@@ -41,6 +56,7 @@ nav {
   list-style-type: none;
   display: flex;
   gap: 25px;
+  font-weight: bold;
 }
 
 button {
@@ -52,11 +68,18 @@ button {
   border-radius: 16px;
 }
 
+button:hover {
+  background-color: #e4cc56;
+}
+
+button:active {
+  background-color: #917a0a;
+}
+
 a {
   text-decoration: none;
-  color: #333333;
   font-family: 'Karla';
-  font-weight: bold;
+  color:#333333;
 }
 
 img {
@@ -93,18 +116,37 @@ header {
 
 #testimonials {
   margin-top: 40px;
+  padding-bottom: 50px;
   background-color: #495E57;
   justify-content: center;
   display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: repeat(4,1fr);
-  padding: 25px;
+  padding: 40px;
+  column-gap: 20px;
 }
 
 #testimonials > h2 {
+  text-align: center;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+#about {
+  margin: 40px;
+  display: flex;
   justify-content: center;
-  grid-row: 1;
-  grid-column-start: span(1,4);
+}
+
+.footerNav {
+  color: #EDEFEE;
+  list-style-type: none;
+}
+
+.footerNav > li > a {
+  color: #EDEFEE;
+  font-weight: lighter;
 }
 
 /* .App-logo {

@@ -1,11 +1,13 @@
 import React from "react";
-import { BsStarFill } from "react-icons/bs";
+import { BsJustify, BsStarFill } from "react-icons/bs";
 
 function Review(props) {
     const articleStyle = {
         backgroundColor: "#EDEFEE",
         borderRadius: "16px",
-        display: "grid"
+        display: "grid",
+        justfiyContent: "center",
+        textAlign: "center"
     }
     return (
         <>
