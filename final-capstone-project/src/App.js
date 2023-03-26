@@ -7,16 +7,24 @@ import About from "./About.js";
 import Footer from "./Footer.js";
 
 function App() {
+  const greenBackground = {backgroundColor: "#495E57"}
+  const isMobile = false;
+  if (!isMobile) {
   return (
     <>
       <Nav/>
-      <Header />
+      <Header style={greenBackground}/>
       <Specials />
-      <Testimonials />
+      <Testimonials style={greenBackground}/>
       <About />
-      <Footer />
+      <Footer style={greenBackground}/>
     </>
   );
+  } else {
+    return (
+      <></>
+    );
+  };
 };
 
 export default App;

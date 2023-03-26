@@ -1,9 +1,11 @@
+
+
 .App {
   text-align: center;
 }
 
 h1 {
-  margin: 0;
+  margin: 0 0 0 0;
   padding: 0;
   font-size: 64pt;
   font-family: 'Markazi Text';
@@ -80,6 +82,7 @@ a {
   text-decoration: none;
   font-family: 'Karla';
   color:#333333;
+  font-weight: bold;
 }
 
 img {
@@ -96,14 +99,15 @@ header {
 
 #specialHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 25vw;
   margin: 20px 10vw 0 10vw;
   align-items: center;
 }
 
 #specials {
   display: flex;
-  gap: 67px;
+  gap: 2vw;
   justify-content: center;
 }
 
@@ -115,15 +119,14 @@ header {
 }
 
 #testimonials {
-  margin-top: 40px;
-  padding-bottom: 50px;
+  margin: 40px 0 0 0;
   background-color: #495E57;
   justify-content: center;
   display: grid;
   grid-template-rows: 1fr 2fr;
   grid-template-columns: repeat(4,1fr);
-  padding: 40px;
-  column-gap: 20px;
+  padding: 80px;
+  column-gap: 0px;
 }
 
 #testimonials > h2 {
@@ -147,6 +150,24 @@ header {
 .footerNav > li > a {
   color: #EDEFEE;
   font-weight: lighter;
+}
+
+@media (max-width: 820px) {
+  header {
+    flex-direction: column;
+    max-height: 100vh;
+  }
+  
+  #specials {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /* .App-logo {
