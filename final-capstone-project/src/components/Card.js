@@ -7,7 +7,7 @@ const Card = (props) => {
             <article id="card">
                 <img src={props.image} alt={props.alt} style={{width:"260px", height:"200px"}}/>
                 <p>{props.text}</p>
-                <a href="/delivery">Order for Delivery <BsArrowRight /></a>
+                <a href="/delivery" style={{fontSize: "16pt"}}>Order for Delivery <BsArrowRight /></a>
             </article>
         </>
     );
