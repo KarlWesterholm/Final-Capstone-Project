@@ -1,6 +1,6 @@
 import React from "react";
-import MarioAdrianA from "./images/Mario and Adrian A.jpg";
-import MarioAdrianB from "./images/Mario and Adrian b.jpg";
+import MarioAdrianA from "../images/Mario and Adrian A.jpg";
+import MarioAdrianB from "../images/Mario and Adrian b.jpg";
 
 function About() {
     return(

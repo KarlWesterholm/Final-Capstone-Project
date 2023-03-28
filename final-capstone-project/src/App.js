@@ -1,10 +1,10 @@
 import './App.css';
-import Nav from './Nav.js';
-import Header from './Header.js';
-import Specials from "./Specials.js";
-import Testimonials from "./Testimonials.js";
-import About from "./About.js";
-import Footer from "./Footer.js";
+import Nav from './components/Nav.js';
+import Header from './components/Header.js';
+import Specials from "./components/Specials.js";
+import Testimonials from "./components/Testimonials.js";
+import About from "./components/About.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   const greenBackground = {backgroundColor: "#495E57"}

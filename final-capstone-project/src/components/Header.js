@@ -1,5 +1,5 @@
 import React from "react";
-import RestaurantFood from "./images/restauranfood.jpg";
+import RestaurantFood from "../images/restauranfood.jpg";
 
 const Header = () => {
     return (
