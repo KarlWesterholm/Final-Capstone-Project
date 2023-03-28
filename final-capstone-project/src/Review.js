@@ -1,7 +1,7 @@
 import React from "react";
 import { BsStarFill } from "react-icons/bs";
 
-function Review(props) {
+const Review = (props) => {
     const articleStyle = {
         backgroundColor: "#EDEFEE",
         borderRadius: "16px",

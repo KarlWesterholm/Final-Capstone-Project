@@ -1,7 +1,7 @@
 import React from "react";
 import RestaurantFood from "./images/restauranfood.jpg";
 
-function Header() {
+const Header = () => {
     return (
         <>
             <header>
@@ -11,7 +11,7 @@ function Header() {
                     <p style={{color:"#EDEFEE"}}>We are a family owned Mediterranean restaurant, focused on traditional  recipes served with a modern twist.</p>
                     <button>Reserve a Table</button>
                 </article>
-                <img src={RestaurantFood} style={{height:"497px", width:"365px", marginBottom:"10px", alt:"Restaurant food"}}/>
+                <img src={RestaurantFood} alt={"Restaurant food"} style={{height:"497px", width:"365px", marginBottom:"10px"}}/>
             </header>
         </>
     );

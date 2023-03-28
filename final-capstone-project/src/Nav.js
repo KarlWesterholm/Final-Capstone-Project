@@ -1,31 +1,30 @@
 import React from "react";
 import Logo from "./images/Logo .svg";
-{/* import { Box, HStack } from "@chakra-ui/react"; */}
 
 
-function Nav() {
+const Nav = () => {
     return(
     <>
         <nav>
             <img src={Logo} alt="Little Lemon Logo" height="40px" width="auto"/>
             <ul id="navlinks">
                 <li>
-                    <a href="">Home</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="">Menu</a>
+                    <a href="/menu">Menu</a>
                 </li>
                 <li>
-                    <a href="">Reservations</a>
+                    <a href="/reserve">Reservations</a>
                 </li>
                 <li>
-                    <a href="">Order Online</a>
+                    <a href="/delivery">Order Online</a>
                 </li>
                 <li>
-                    <a href="">Login</a>
+                    <a href="/login">Login</a>
                 </li>
             </ul>
         </nav>

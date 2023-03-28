@@ -1,54 +1,54 @@
 import React from "react";
 import Logo from "./images/Logo .svg";
 
-function Footer() {
+const Footer = () => {
     return (
         <>
             <div style={{backgroundColor:"#495E57", display: "flex", justifyContent:"center", padding: "40px"}}>
-                <img src={Logo} alt=""/>
+                <img src={Logo} alt="Logo"/>
                 <ul className="footerNav">
                     <h6>Doormat Navigation</h6>
                     <li>
-                        <a href="">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li>
-                        <a href="">Menu</a>
+                        <a href="/menu">Menu</a>
                     </li>
                     <li>
-                        <a href="">Reservations</a>
+                        <a href="/reserve">Reservations</a>
                     </li>
                     <li>
-                        <a href="">Order Online</a>
+                        <a href="/delivery">Order Online</a>
                     </li>
                     <li>
-                        <a href="">Login</a>
+                        <a href="/login">Login</a>
                     </li>
                 </ul>
                 <ul className="footerNav">
                     <h6>Contact</h6>
                     <li>
-                        <a href="">Address</a>
+                        <a href="/contact">Address</a>
                     </li>
                     <li>
-                        <a href="">Phone Number</a>
+                        <a href="/contact">Phone Number</a>
                     </li>
                     <li>
-                        <a href="">Email</a>
+                        <a href="/contact">Email</a>
                     </li>
                 </ul>
                 <ul className="footerNav">
                     <h6>Social Media Links</h6>
                     <li>
-                        <a href="">Facebook</a>
+                        <a href="facebook.com">Facebook</a>
                     </li>
                     <li>
-                        <a href="">Instagram</a>
+                        <a href="instagram.com">Instagram</a>
                     </li>
                     <li>
-                        <a href="">YouTube</a>
+                        <a href="youtube.com">YouTube</a>
                     </li>
                 </ul>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Review from "./Review.js";
 
 
-function Testimonials() {
+const Testimonials = () => {
     const johnImg = "https://i.pravatar.cc/150?img=7"
     const amyImg = "https://i.pravatar.cc/150?img=5"
     const giacomoImg = "https://i.pravatar.cc/150?img=11"
