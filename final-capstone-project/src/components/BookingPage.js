@@ -1,11 +1,13 @@
 import React from "react";
 import BookingForm from "./BookingForm.js"
 
-const BookingPage = () => {
+const BookingPage = (props) => {
     return (
         <>
-            <h1>Table Reservation</h1>
-            <BookingForm />
+            <header>
+                <h1>Table Reservation</h1>
+            </header>
+            <BookingForm {...props}/>
         </>
     );
 };

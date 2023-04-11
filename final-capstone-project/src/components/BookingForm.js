@@ -1,32 +1,51 @@
-import { React, useState, useRef } from "react";
+import { React, useState } from "react";
 
-const BookingForm = () => {
-    const dateRef = useRef(null);
-    const timeRef = useRef(null);
-    const guestRef = useRef(null);
-    const occasionRef = useRef(null)
+const BookingForm = (props) => {
     const [date, setDate] = useState("");
     const [time, setTime] = useState("17")
     const [guests, setGuests] = useState("2");
     const [occasion, setOccasion] = useState("None");
+    // Temporary submit handler
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form Submitted!");
+        console.log({date}, {time}, {guests}, {occasion});
+    }
     return (
         <>
-            <form style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
+            <form
+                style={{
+                    display: "grid",
+                    maxWidth: "200px",
+                    gap: "20px",
+                    margin: "auto",
+                }}
+                onSubmit={handleSubmit}
+                >
                 <label htmlFor="res-date">Choose date</label>
-                <input type="date" id="res-date" onChange={input => setDate(input)}/>
+                <input
+                    type="date"
+                    id="res-date"
+                    onChange={e => setDate(e.target.value)}
+                />
                 <label htmlFor="res-time">Choose time</label>
-                <select id="res-time" onChange={input => setTime(input)}>
-                    <option>17:00</option>
-                    <option>18:00</option>
-                    <option>19:00</option>
-                    <option>20:00</option>
-                    <option>21:00</option>
-                    <option>22:00</option>
+                <select id="res-time" onChange={e => setTime(e.target.value)}>
+                    {props.times.map((hour) => (
+                        <option>{hour}</option>
+                        ))}
                 </select>
                 <label htmlFor="guests">Number of guests</label>
-                <input type="number" placeholder="2" min="2" max="10" id="guests" onChange={input => setGuests(input)}/>
+                <input
+                    type="number"
+                    placeholder="2"
+                    min="1"
+                    max="10"
+                    id="guests"
+                    onChange={e => setGuests(e.target.value)}
+                />
                 <label htmlFor="occasion">Occasion</label>
-                <select id="occasion" onChange={input => setOccasion(input)}>
+                <select id="occasion" onChange={e => setOccasion(e.target.value)}>
+                    <option>None</option>
                     <option>Birthday</option>
                     <option>Anniversary</option>
                 </select>

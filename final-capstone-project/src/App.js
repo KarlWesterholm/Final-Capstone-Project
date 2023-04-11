@@ -1,6 +1,6 @@
 import './App.css';
 import Nav from './components/Nav.js';
-import HomePage from "./components/HomePage.js";
+import Main from "./components/Main.js"
 
 function App() {
   const isMobile = false;
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Nav/>
-      <HomePage />
+      <Main />
     </>
   );
   } else {

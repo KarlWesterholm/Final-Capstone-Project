@@ -1,7 +1,10 @@
-
+* {
+  font-family: 'Karla';
+}
 
 .App {
   text-align: center;
+  font-family: 'Karla';
 }
 
 h1 {
@@ -151,6 +154,7 @@ header {
   color: #EDEFEE;
   font-weight: lighter;
 }
+
 
 @media (max-width: 820px) {
   header {

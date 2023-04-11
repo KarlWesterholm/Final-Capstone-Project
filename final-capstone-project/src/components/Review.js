@@ -18,7 +18,7 @@ const Review = (props) => {
                 <h4>{props.rating} <BsStarFill/> </h4>
                 <img src={props.image} alt={props.name} style={{margin: "auto"}}/>
                 <h4>{props.name}</h4>
-                <h5>{props.review}</h5>
+                <h5>{props.comment}</h5>
             </article>
         </>
     );

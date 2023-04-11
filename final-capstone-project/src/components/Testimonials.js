@@ -3,18 +3,39 @@ import Review from "./Review.js";
 
 
 const Testimonials = () => {
-    const johnImg = "https://i.pravatar.cc/150?img=7"
-    const amyImg = "https://i.pravatar.cc/150?img=5"
-    const giacomoImg = "https://i.pravatar.cc/150?img=11"
-    const lillyImg = "https://i.pravatar.cc/150?img=9"
+    const reviews = [
+        {
+            name: "John",
+            image: "https://i.pravatar.cc/150?img=7",
+            rating: "5/5",
+            comment: "Incredible food, and a truly incredible attention to every detail."
+        },
+        {
+            name: "Amy",
+            image: "https://i.pravatar.cc/150?img=5",
+            rating: "4.5/5",
+            comment: "Amazing service and a wonderful atmosphere."
+        },
+        {
+            name: "Giacomo",
+            image: "https://i.pravatar.cc/150?img=11",
+            rating: "5/5",
+            comment: "It's like being back in Italy!"
+        },
+        {
+            name: "Lilly",
+            image: "https://i.pravatar.cc/150?img=9",
+            rating: "4.9/5",
+            comment: "What an experience! I bring all my friends here."
+        }
+    ];
     return (
         <>
             <div id="testimonials">
                 <h2 style={{justifyContent:"center", fontSize: "48pt"}}>Testimonials</h2>
-                <Review name="John" image={johnImg} rating={"5/5"} review="Incredible food, and a truly incredible attention to every detail."/>
-                <Review name="Amy" image={amyImg} rating={"4.5/5"} review="Amazing service and a wonderful atmosphere. "/>
-                <Review name="Giacomo" image={giacomoImg} rating={"5/5"} review="It's like being back in Italy!"/>
-                <Review name="Lilly" image={lillyImg} rating={"4.9/5"} review="What an experience! I bring all my friends here."/>
+                {reviews.map(review => (
+                <Review name={review.name} image={review.image} rating={review.rating} comment={review.comment}/>
+                ))};
             </div>
         </>
     );
