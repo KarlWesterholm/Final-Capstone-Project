@@ -33,7 +33,7 @@ const Main = () => {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
     return (
         <>
-            <HomePage />
+            <BookingPage times={availableTimes}/>
         </>
     );
 };
