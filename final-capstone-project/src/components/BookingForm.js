@@ -19,6 +19,8 @@ const BookingForm = (props) => {
                     maxWidth: "200px",
                     gap: "20px",
                     margin: "auto",
+                    paddingTop: "4rem",
+                    paddingBottom: "4rem"
                 }}
                 onSubmit={handleSubmit}
                 >

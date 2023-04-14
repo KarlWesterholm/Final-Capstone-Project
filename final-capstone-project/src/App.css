@@ -2,9 +2,8 @@
   font-family: 'Karla';
 }
 
-.App {
-  text-align: center;
-  font-family: 'Karla';
+#app {
+  height: 100vh;
 }
 
 h1 {
@@ -93,11 +92,16 @@ img {
 }
 
 header {
-  padding: 40px 10vw 0 10vw;
+  padding: 1rem;
+  align-items: center;
   justify-content: center;
   background-color: #495E57;
   display: flex;
   max-height: 444px;
+}
+
+header > img {
+  margin-top: 6rem;
 }
 
 #specialHeader {
@@ -145,6 +149,15 @@ header {
   justify-content: center;
 }
 
+footer {
+  bottom: 0px;
+  min-width: 100vw;
+  background-color: #495E57;
+  display: flex;
+  justify-content: center;
+  padding: 2rem
+}
+
 .footerNav {
   color: #EDEFEE;
   list-style-type: none;
@@ -161,7 +174,7 @@ header {
     flex-direction: column;
     max-height: 100vh;
   }
-  
+
   #specials {
     flex-direction: column;
     justify-content: center;

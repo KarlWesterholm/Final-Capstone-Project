@@ -1,15 +1,11 @@
-import ReactDOM from "react-dom/client";
-import { React, BrowserRouter, Routes, Route, useReducer }  from "react";
+import { React, useReducer }  from "react";
+import {Routes, Route} from "react-router-dom";
 import HomePage from "./HomePage.js";
 import BookingPage from "./BookingPage.js";
+import Construction from "./Construction.js";
+
 
 const Main = () => {
-    <BrowserRouter>
-    <Routes>
-        <Route index element={<HomePage />} />
-        <Route path="/reserve" element={<BookingPage />} />
-    </Routes>
-    </BrowserRouter>
     const initializeTimes = [
                 "17:00",
                 "18:00",
@@ -33,11 +29,13 @@ const Main = () => {
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
     return (
         <>
-            <BookingPage times={availableTimes}/>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/reserve" element={<BookingPage times={availableTimes}/>} />
+                <Route path="/oops" element={<Construction />}/>
+            </Routes>
         </>
     );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Main />);
 export default Main;

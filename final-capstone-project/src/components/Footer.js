@@ -4,8 +4,7 @@ import Logo from "../images/Logo .svg";
 const Footer = () => {
     return (
         <>
-            <div style={{backgroundColor:"#495E57", display: "flex", justifyContent:"center", padding: "40px"}}>
-                <img src={Logo} alt="Logo"/>
+            <footer>
                 <ul className="footerNav">
                     <h6>Doormat Navigation</h6>
                     <li>
@@ -51,7 +50,8 @@ const Footer = () => {
                         <a href="youtube.com">YouTube</a>
                     </li>
                 </ul>
-            </div>
+                <img src={Logo} alt="Logo"/>
+            </footer>
         </>
     );
 };

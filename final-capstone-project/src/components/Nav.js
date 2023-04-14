@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../images/Logo .svg";
+import { Link } from "react-router-dom"
 
 
 const Nav = () => {
@@ -9,22 +10,22 @@ const Nav = () => {
             <img src={Logo} alt="Little Lemon Logo" height="40px" width="auto"/>
             <ul id="navlinks">
                 <li>
-                    <a href="/">Home</a>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <Link to="/oops">About</Link>
                 </li>
                 <li>
-                    <a href="/menu">Menu</a>
+                    <Link to="/oops">Menu</Link>
                 </li>
                 <li>
-                    <a href="/reserve">Reservations</a>
+                    <Link to="/reserve">Reservations</Link>
                 </li>
                 <li>
-                    <a href="/delivery">Order Online</a>
+                    <Link to="/oops">Order Online</Link>
                 </li>
                 <li>
-                    <a href="/login">Login</a>
+                    <Link to="/oops">Login</Link>
                 </li>
             </ul>
         </nav>

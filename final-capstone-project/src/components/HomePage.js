@@ -3,7 +3,6 @@ import Header from './Header.js';
 import Specials from "./Specials.js";
 import Testimonials from "./Testimonials.js";
 import About from "./About.js";
-import Footer from "./Footer.js";
 
 const HomePage = () => {
     return (
@@ -12,7 +11,6 @@ const HomePage = () => {
         <Specials />
         <Testimonials/>
         <About />
-        <Footer/>
     </>
     );
 };
