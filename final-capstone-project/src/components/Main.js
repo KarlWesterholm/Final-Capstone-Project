@@ -6,6 +6,7 @@ import Construction from "./Construction.js";
 
 
 const Main = () => {
+    // Initial available times
     const initializeTimes = [
                 "17:00",
                 "18:00",
@@ -15,23 +16,16 @@ const Main = () => {
                 "22:00",
                 "23:00"
             ]
+    // Function to update the times based on date selection
     const updateTimes = () => {
-        return ([
-            "17:00",
-            "18:00",
-            "19:00",
-            "20:00",
-            "21:00",
-            "22:00",
-            "23:00"
-        ])
+        return initializeTimes
     }
     const [availableTimes, dispatch] = useReducer(updateTimes, initializeTimes);
     return (
         <>
             <Routes>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/reserve" element={<BookingPage times={availableTimes}/>} />
+                <Route path="/reserve" element={<BookingPage times={availableTimes} update={dispatch}/>} />
                 <Route path="/oops" element={<Construction />}/>
             </Routes>
         </>

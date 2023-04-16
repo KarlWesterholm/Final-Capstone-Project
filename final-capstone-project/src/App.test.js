@@ -1,14 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import BookingForm from './components/BookingForm.js';
+import BookingPage from './components/BookingPage.js';
 
-test('changes date variable to May 4th, 2023', () => {
-  render(<BookingForm />);
-
-  // Click date selector
-  fireEvent.click(screen.getByLabelText('Choose time'));
-
-  // Type in date
-  fireEvent.click(screen.getByDisplayValue('20:00'));
-
-  expect(time).toHaveValue("20:00");
+test('Renders the BookingPage heading', () => {
+  render(<BookingPage times={["17:00"]}/>);
+  const headingElement = screen.getByText("Table Reservation");
+  expect(headingElement).toBeInTheDocument();
 });

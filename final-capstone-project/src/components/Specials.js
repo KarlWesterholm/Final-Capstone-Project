@@ -32,7 +32,7 @@ const Specials = () => {
             </article>
             <article id="specials">
                 {specialcards.map((special) => (
-                    <Card image={special.image} text={special.text} alt={special.alt} />
+                    <Card image={special.image} text={special.text} alt={special.alt} key={special.alt}/>
                 ))}
             </article>
         </>

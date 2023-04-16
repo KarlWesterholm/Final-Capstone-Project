@@ -7,7 +7,9 @@ const BookingPage = (props) => {
             <header>
                 <h1>Table Reservation</h1>
             </header>
+            <div className="formBackground">
             <BookingForm {...props}/>
+            </div>
         </>
     );
 };

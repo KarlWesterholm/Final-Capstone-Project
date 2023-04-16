@@ -1,4 +1,5 @@
 import './App.css';
+import {VStack} from "@chakra-ui/react";
 import Nav from './components/Nav.js';
 import Main from "./components/Main.js";
 import Footer from "./components/Footer.js";
@@ -9,11 +10,13 @@ function App() {
   const isMobile = false;
   if (!isMobile) {
   return (
-    <div id="app">
-      <Nav/>
+  <>
+    <Nav/>
+    <VStack minHeight={"100vh"} justifyContent={"space-between"}>
       <Main />
       <Footer/>
-    </div>
+    </VStack>
+  </>
   );
   } else {
     return (

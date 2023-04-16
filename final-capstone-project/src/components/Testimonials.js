@@ -34,7 +34,7 @@ const Testimonials = () => {
             <div id="testimonials">
                 <h2 style={{justifyContent:"center", fontSize: "48pt"}}>Testimonials</h2>
                 {reviews.map(review => (
-                <Review name={review.name} image={review.image} rating={review.rating} comment={review.comment}/>
+                <Review name={review.name} image={review.image} rating={review.rating} comment={review.comment} key={review.name}/>
                 ))};
             </div>
         </>
