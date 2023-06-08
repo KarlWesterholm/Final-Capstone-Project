@@ -3,6 +3,7 @@ import Card from "./Card.js";
 import GreekSalad from "../images/greek salad.jpg";
 import Bruchetta from "../images/Bruchetta.png";
 import LemonDessert from "../images/lemon dessert.jpg";
+import { Link } from "react-router-dom";
 
 /* Hero section for specials, calling Card component for each individual special card */
 
@@ -28,7 +29,7 @@ const Specials = () => {
         <>
             <article id="specialHeader">
                 <h3>This week's specials!</h3>
-                <button>View Menu</button>
+                <Link to="/oops"><button type="button">View Menu</button></Link>
             </article>
             <article id="specials">
                 {specialcards.map((special) => (

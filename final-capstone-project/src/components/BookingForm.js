@@ -42,6 +42,7 @@ const BookingForm = (props) => {
                     type="name"
                     name="setName"
                     id="res-name"
+                    required="true"
                     onChange={e => setName(e.target.value)}
                     />
                 <label htmlFor="res-date">Choose date</label>

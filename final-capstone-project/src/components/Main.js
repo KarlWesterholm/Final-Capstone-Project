@@ -39,6 +39,11 @@ const Main = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/reserve" element={<BookingPage times={availableTimes} update={dispatch} submitter={submitForm}/>} />
+                <Route path="/menu" element={<Construction />} />
+                <Route path="/about" element={<Construction />} />
+                <Route path="/delivery" element={<Construction />} />
+                <Route path="/login" element={<Construction />} />
+                <Route path="/contact" element={<Construction />} />
                 <Route path="/oops" element={<Construction />}/>
                 <Route path="/booking-success" element={<ConfirmedBooking name={name} date={date} time={time}/>}/>
             </Routes>

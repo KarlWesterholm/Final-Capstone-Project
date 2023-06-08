@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../images/Logo .svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -8,46 +9,46 @@ const Footer = () => {
                 <ul className="footerNav">
                     <h6>Doormat Navigation</h6>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/about">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <a href="/menu">Menu</a>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li>
-                        <a href="/reserve">Reservations</a>
+                        <Link to="/reserve">Reservations</Link>
                     </li>
                     <li>
-                        <a href="/delivery">Order Online</a>
+                        <Link to="/delivery">Order Online</Link>
                     </li>
                     <li>
-                        <a href="/login">Login</a>
+                        <Link to="/login">Login</Link>
                     </li>
                 </ul>
                 <ul className="footerNav">
                     <h6>Contact</h6>
                     <li>
-                        <a href="/contact">Address</a>
+                        <Link to="/contact">Address</Link>
                     </li>
                     <li>
-                        <a href="/contact">Phone Number</a>
+                        <Link to="/contact">Phone Number</Link>
                     </li>
                     <li>
-                        <a href="/contact">Email</a>
+                        <Link to="/contact">Email</Link>
                     </li>
                 </ul>
                 <ul className="footerNav">
                     <h6>Social Media Links</h6>
                     <li>
-                        <a href="facebook.com">Facebook</a>
+                        <Link to={{ pathname: "https://facebook.com" }}>Facebook</Link>
                     </li>
                     <li>
-                        <a href="instagram.com">Instagram</a>
+                        <Link to={{ pathname: "https://instagram.com" }}>Instagram</Link>
                     </li>
                     <li>
-                        <a href="youtube.com">YouTube</a>
+                        <Link to={{ pathname: "https://youtube.com" }}>YouTube</Link>
                     </li>
                 </ul>
                 <img src={Logo} alt="Logo"/>
